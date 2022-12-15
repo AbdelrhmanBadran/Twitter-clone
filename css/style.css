@@ -3,7 +3,7 @@ body{
     padding: 0;
     box-sizing: border-box;
     background-color: var(--primary-color) ;
-    transition: background 0.2s linear;
+    transition: all 0.2s linear;
     /* background-color: white; */
 }
 
@@ -110,7 +110,7 @@ header{
     height: 45px;
     border:none;
     border-radius: 9999px;
-    color: var(--primary-color);
+    color: #fff;
     font-weight: 700;
     transition-duration: 0.2s;
 }
@@ -256,7 +256,19 @@ main{
     transform: translateX(24px);
   }
 
-
+.log{
+    outline: none;
+    border: 1px solid rgb(29, 155, 240);
+    border-radius: 20px ;
+    transition: 0.5s all;
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.log:hover{
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
+}
 .high-details{
     font-weight: 700;
     color: var(--secondary-color);
@@ -294,6 +306,8 @@ main{
     outline: none;
     background-color: var(--primary-color);
     color: var(--secondary-color);
+    transition: all 0.2s linear;
+
 
 }
 .tweet-input::placeholder{
@@ -345,6 +359,8 @@ main{
 .twwet-text-content{
     background-color: var(--primary-color);
     color: var(--secondary-color);
+    transition: all 0.2s linear;
+
 }
 .tweet-age{
     color: var(--secondary-color);
@@ -361,9 +377,11 @@ main{
 border: none;
 margin-left: -10px;
 width: 103%;
-transition: 0.5s all;
 color: var(--secondary-color);
+background-color: var(--secondary-color);
+background-color: #f39c12;
 }
+
 .post:hover{
     background-color: #7f858a16;
     cursor: pointer;
