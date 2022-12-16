@@ -29,7 +29,7 @@ function formValidate(){
 
     if(username.length < 5){
         //ERORR
-        erorr.innerHTML = 'Enter valid Username';
+        erorr.innerHTML = 'Enter valid Username (minimum 5 characters) ';
         erorr1.innerHTML = '';
         erorr2.innerHTML = '';
         return false;
@@ -46,7 +46,7 @@ function formValidate(){
     }
     else if(phone.length != 11 || isNaN(phone) ){
         //ERORR
-        erorr2.innerHTML = 'Enter Valid password (mut be numbers only and minimum 10 numbers !)';
+        erorr2.innerHTML = 'Enter Valid password (must be numbers only and minimum 10 numbers !)';
         erorr.innerHTML = '';
         erorr1.innerHTML = '';
         return false;
