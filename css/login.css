@@ -1,13 +1,30 @@
 body{
     margin: 0;
     padding: 0; 
+    height: 100vh;
+    /* background-color: yellowgreen; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
+section{
+    width: 60%;
+    height: 80%;
+    border-radius: 20px;
+    padding-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(29, 156, 240);
+    /* background-color: aqua; */
+
+}
 .icon-details{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 220px;
+    margin-top: 22px;
 
 }
 .img{
@@ -32,8 +49,8 @@ body{
     border-right: 0px;
     border-left: 0px;
     border-top: 0px;
-    border-bottom: 1px solid;
-    width: 350px;
+    border-bottom: 1px solid rgba(29, 156, 240);
+    width: 250px;
     padding-top: 20px;
     outline: none;
     
@@ -44,25 +61,11 @@ body{
     transition: 0.1s;
     
 }
-.pass{
-    margin-top: 10px;
-    border-right: 0px;
-    border-left: 0px;
-    border-top: 0px;
-    border-bottom: 1px solid;
-    width: 350px;
-    padding-top: 20px;
-    outline: none;
-}
-.pass:focus{
-    background-color: rgb(196, 231, 255);
-    border-bottom: 2px solid rgb(29, 155, 240);
-    transition: 0.1s;
-}
+
 
 .log-butt{
-    background-color: rgba(29, 156, 240, 0.692);
-    width: 360px;
+    background-color: rgba(29, 156, 240, 0.5);
+    width: 250px;
     height: 50px;
     border: none;
     border-radius: 9999px;
@@ -70,12 +73,42 @@ body{
     font-weight: 900;
     margin-top: 40px;
     font-size: 17px;
+    cursor: pointer;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.log-butt:hover{
+    background-color:rgba(29, 156, 240) ;
 }
 
 @media screen and (max-width: 600px) {
-    .log-butt{
-        width: 240px;
+
+    .email{
+        width: 100%;
     }
+
+    .log-butt{
+        width: 100%;
+    }
+    .words{
+        font-size: 15px;
+    }
+    
    
+   
+}
+.message{
+    resize: none;
+    margin-top: 20px;
+    border: 1px solid rgba(29, 156, 240) ;
+    border-radius: 3px;
+}
+
+.error{
+    margin-top: px;
+    width: 210px;
+    padding:10px;
+    display: inline-block;
+    outline: none;
+    color: red;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }

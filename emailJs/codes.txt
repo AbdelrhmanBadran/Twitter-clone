@@ -1,0 +1,3 @@
+_eGdVgw1nelp1wFEN  public_key
+template_e5a64l8   template_id
+service_nnkfvu5    service_id

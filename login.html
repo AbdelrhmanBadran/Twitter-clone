@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Log In</title>
+    <link rel="icon" href="./img/icon.png">
     <link rel="stylesheet" href="./css/login.css">
     <script src="https://kit.fontawesome.com/4b23182eba.js" crossorigin="anonymous"></script>
 </head>
@@ -17,21 +18,58 @@
                 <img class="img" src="img/icon.png" alt="">
                 <span class="words">Log in to Twitter</span>
             </div>
-            <div class="inputs">
-                <form action="index.html">
-                    <div class="edit-inp">
-                        <input class="email" type="email" placeholder="Phone,email,or username">
-                        <input class="pass" type="password" placeholder="Password">
-                        <input class="log-butt" type="submit" value="Log In">
+            <div class="edit-inp">
+                <br>
+                <form onsubmit="return formValidate();" class="inputs" action="./index.html">
+                <input type="text" class="email" id="username" placeholder="UserName">
+                <br>
+                <span id="erorr" class="error"></span>
 
+                <br>
+                <br>
+                <input type="email" class="email" id="email"  placeholder="email">
+                <br>
+                <span id="erorr1" class="error"></span>
+                <br>
+                <br>
+                <input type="text" class="email"  id="phone"  placeholder="password">
+                <br>
+                <span id="erorr2" class="error"></span>
+                <br>
+                <br>
+                <button type="submit" class="log-butt">Log in</button>
                 </form>
-
             </div>
-
-        </div>
         </div>
     </section>
 
+
+        <script src="./js/main2.js"></script>
+        <!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+            <script type="text/javascript">
+            (function(){
+                emailjs.init("_eGdVgw1nelp1wFEN ");
+            })();
+            </script> -->
 </body>
 
 </html>
+
+
+<!-- 
+<div class="parent">
+    <div class="icon-details">
+        <img class="img" src="img/icon.png" alt="">
+        <span class="words">Log in to Twitter</span>
+    </div>
+    <span id="error"></span>
+    <form class="inputs" onsubmit="return formValidate();">
+        <div class="edit-inp">
+            <input class="email" type="text" id="username" placeholder=" username">
+            <input class="email" type="email" id="email" placeholder="email">
+            <input class="email" type="text" id="pass" placeholder="password">
+            <button class="log-butt" type="submit">send</button>
+        </div>
+        <a href="./index.html" style="display: inline-block;"><input  class="log-butt" id="log-in" type="submit" value="Log In"></a>
+    </form>
+</div> -->
