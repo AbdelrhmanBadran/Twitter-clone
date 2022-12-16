@@ -9,11 +9,12 @@ body{
 }
 
 section{
-    width: 60%;
+    width: 40%;
     height: 90%;
     border-radius: 20px;
     padding-bottom: 15px;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     border: 1px solid rgba(29, 156, 240);
@@ -41,6 +42,7 @@ section{
 
 .edit-inp{
     display: flex;
+    width: 100%;
     flex-direction: column;
     align-items: center;
     /* margin-top: 40px;    */
@@ -50,7 +52,7 @@ section{
     border-left: 0px;
     border-top: 0px;
     border-bottom: 1px solid rgba(29, 156, 240);
-    width: 250px;
+    width: 70%;
     padding-top: 20px;
     outline: none;
     
@@ -65,7 +67,7 @@ section{
 
 .log-butt{
     background-color: rgba(29, 156, 240, 0.5);
-    width: 250px;
+    width: 40%;
     height: 50px;
     border: none;
     border-radius: 9999px;
@@ -75,12 +77,14 @@ section{
     font-size: 17px;
     cursor: pointer;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-bottom: 20px;
+
 }
 .log-butt:hover{
     background-color:rgba(29, 156, 240) ;
 }
 .error{
-    width: 210px;
+    width: 70%;
     padding:10px;
     display: inline-block;
     outline: none;
@@ -108,7 +112,10 @@ section{
         display: inline-block;
         font-size: 12px;
 
-
+ 
+    }
+    section{
+        width: 80%;
     }
 
 
